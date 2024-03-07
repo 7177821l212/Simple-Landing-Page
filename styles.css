@@ -1,0 +1,65 @@
+/* Add this to your existing styles.css file */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('/Images/gordon-siewert-hGosw6tjVw0-unsplash.jpg');
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    font-weight: bold;
+    color: black;
+}
+.navbar {
+    background-color:transparent;
+    color: white;
+    padding: 10px;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-icon {
+    margin-right: 10px;
+}
+
+.link {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.link li {
+    margin-right: 20px;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .link {
+        margin-top: 15px;
+    }
+
+    .link li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
